@@ -10,7 +10,10 @@
 
 <div  #macolor [style.backgroundColor]="color">
 
-<input #input type="color" class="text-black-50" (change) = "colorshow(input.value)">
+<!--<input #input type="color" class="text-black-50" (change) = "colorshow(input.value)">-->
+  <input type="color"  class="form-control" [(ngModel)]="color">
+
+  la couleur est : {{color}}
   <button class="btn-primary" (click) = "def()">
 
     default
