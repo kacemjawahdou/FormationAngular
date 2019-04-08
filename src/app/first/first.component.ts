@@ -6,10 +6,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first.component.css']
 })
 export class FirstComponent implements OnInit {
-
+ show = false ;
+ color = 'red';
+ colordef = 'red';
   constructor() { }
 
   ngOnInit() {
   }
+
+  showhide(paragraphe) {
+
+    console.log(paragraphe);
+
+    this.show = !this.show;
+  }
+
+  colorshow(macolor) {
+    console.log(macolor);
+    this.color = macolor;
+
+
+  }
+def() {
+
+    this.color = this.colordef;
+
+}
 
 }

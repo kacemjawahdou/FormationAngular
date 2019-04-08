@@ -1,4 +1,19 @@
-<p>
+<p #mparag [hidden]="show" >
   first work
 </p>
 
+
+<button class="btn-primary" (click)="showhide(mparag)">
+  show
+
+</button>
+
+<div  #macolor [style.backgroundColor]="color">
+
+<input #input class="text-black-50" (change) = "colorshow(input.value)">
+  <button class="btn-primary" (click) = "def()">
+
+    default
+  </button>
+
+</div>

@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'FormationAngular';
   x = 2;
+
+
 }
