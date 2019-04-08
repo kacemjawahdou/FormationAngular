@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstComponent implements OnInit {
  show = false ;
- color = 'red';
+
  colordef = 'red';
+  color = this.colordef;
   constructor() { }
 
   ngOnInit() {
